@@ -1,0 +1,37 @@
+﻿1.基本语法
+	1.创建简单的java程序
+		jdk-7u51-window-i586
+		7					JDK1.7
+		u					update
+		i586/i386/i686		32位系统
+		x64					64位系统
+		
+捕鱼达人游戏分析：
+	1.分析图片
+		bg.jpg 			背景
+		net.png			渔网
+		fish01_00.png	第一条鱼
+		fish01_01.png
+		fish01_02.png
+		....
+		fish01_09.png
+		
+		fish02_00.png	第二条鱼
+		....
+		fish02_09.png
+		....
+		....
+		fish09_00.png	第九条鱼
+		fish13_00.png
+		fish14_00.png
+		
+	2.结构分析
+		1）鱼类{速度、位置、分数、图片}	Fish
+			图片路径以项目的“根目录”为基准
+		2）渔网类{位置、宽高}		Net
+		3）鱼池类{图片、鱼、渔网、画鱼/渔网/背景}	Pool
+			画[1.继承JPanel	2.paint(Graphics g)]
+		4）程序入口 main
+			创建窗体指定大小 	800*480
+			创建鱼池
+			显示
